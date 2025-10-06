@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Which Tile Should I Discard? — ISMAR 2025</title>
+  <meta name="description" content="Project page for 'Which Tile Should I Discard?: Supporting Beginners in Mahjong by Presenting Recommended Discards in Mixed Reality' (ISMAR 2025)." />
+  <link rel="icon" href="assets/favicon.png"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #ffffff;
+      color: #222;
+      line-height: 1.7;
+    }
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 16px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    header img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 0.4em;
+      color: #111;
+    }
+    h2 {
+      /*border-bottom: 2px solid #eee;*/
+      padding-bottom: 4px;
+      margin-top: 2.5em;
+      font-size: 1.7em;
+      text-align: center;
+    }
+
+    .authors {
+      margin-top: 0.5em;
+      color: #666;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .center{
+        text-align: center;
+    }
+    .btn {
+      display: inline-block;
+      background: #313131;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      margin-right: 8px;
+    }
+    .btn:hover {
+      background: #004a99;
+    }
+    section img, section iframe {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    section {
+        padding:10px;
+    
+    
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8em;
+      color: #888;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+    }
+    .code-container {
+            position: relative;
+    }
+    code.bib {
+            display: block;
+            white-space: pre;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 12px ;
+            overflow-x: auto;
+            font-family: monospace;
+    }
+    .copy-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        border: 0px;
+        padding: 4px 8px;
+        font-size: 0.8em;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 60px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -30px;
+        margin-bottom: 10px;
+        
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        transition: 1s;
+      }
+    .bg{
+        background-color:#f5f5f5;
+    }
+  </style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+
+    <header class="wrap">
+      <h1>Which Tile Should I Discard?<br><span style="font-size:0.6em;font-weight:normal;line-height:0.8;">Supporting Beginners in Mahjong by Presenting Recommended Discards in Mixed Reality</span></h1>
+      <h3></h3
+      <p class="authors">Jun Kojima, Shizuka Shirai, Naoya Chiba, Yuki Uranishi<br>
+      Graduate School of Information Science &amp; Technology, Osaka University</p>
+      <img src="assets/teaser.png" alt="Teaser image showing MR Mahjong system">
+      <p style="margin-top: 12px;">
+        <!--<a class="btn" href="ISMAR2025_Kojima.pdf" target="_blank">📄 Paper (PDF)</a>-->
+        <a class="btn" href="#video"><i class="fab fa-youtube"></i> Video</a>
+        <a class="btn" href="#bibtex"><i class="fas fa-book"></i> BibTeX</a>
+      </p>
+    </header>
+
+    <section id="abstract" class="bg">
+      <h2>Abstract</h2>
+      <div class="wrap">
+          <p>This study proposes a novice Mahjong players support system using Mixed Reality to reduce the barriers that beginners face during physical play. Our system calculates an optimal discard ranking based on the player’s current hand and displays the recommended tile to discard via a hologram using an optical head-mounted display. To evaluate the effectiveness of the proposed system, we conducted a comparative experiment with novice players using a single-player Mahjong environment, with and without the support system.The results showed improved tile efficiency and high user satisfaction when using the system.</p>
+      </div>
+    </section>
+
+    <section id="video">
+      <h2>Video</h2>
+      <div class ="wrap center">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/S7NluYjO1YM?si=LEDSc85hQ9meh2sU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="bibtex">
+      <h2>BibTeX</h2>
+      <div class ="wrap">
+      <div class="code-container">
+          <button class="copy-btn tooltip" onclick="copyBibTex()"><i class="fas fa-copy"></i><span class="tooltiptext">Copy</span></button>
+          <code class="bib" id="bibtex-code">
+@inproceedings{kojima2025which,
+  title     = {Which Tile Should I Discard?: Supporting Beginners in Mahjong by Presenting Recommended Discards in Mixed Reality},
+  author    = {Kojima, Jun and Shirai, Shizuka and Chiba, Naoya and Uranishi, Yuki},
+  booktitle = {IEEE International Symposium on Mixed and Augmented Reality (ISMAR)},
+  year      = {2025},
+}
+      </code>
+      </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Integrated Media Environment Lab (Uranishi Lab), The University of Osaka • Contact: yuki.uranishi.cmc[at]osaka-u.ac.jp</a>
+    </footer>
+
+  <script>
+      function copyBibTex() {
+        const code = document.getElementById('bibtex-code').innerText;
+        navigator.clipboard.writeText(code).then(() => {
+          const tooltip = document.querySelector('.tooltiptext');
+          tooltip.textContent = 'Copied!';
+          setTimeout(() => tooltip.textContent = 'Copy', 1500);
+        });
+      }
+    </script>
+</body>
+</html>
